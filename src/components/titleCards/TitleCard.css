@@ -1,0 +1,54 @@
+.cards-title{
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+.cards-title h2{
+    margin-bottom: 8px;
+}
+.card-list{
+    display: flex;
+    gap: 10px;
+    overflow-x: scroll;
+}
+.card-list::-webkit-scrollbar{
+    display: none;
+}
+.card-list img{
+    border-radius: 4px;
+    cursor: pointer;
+}
+.card-list .card{
+    position: relative;
+}
+.card-list .card p{
+    position: absolute;
+    bottom: 15px;
+    right: 10px;
+}
+@media (max-width:800px) {
+    .cards-title{
+        margin-top: 20px;
+        margin-bottom: 0;
+    }
+    .cards-title h2{
+        font-size: 20px;
+    }
+    .card-list img{
+        width: 200px;
+    }
+    .card-list p{
+        font-size: 12px;
+    }
+}
+@media (max-width:500px) {
+
+    .cards-title h2{
+        font-size: 15px;
+    }
+    .card-list img{
+        width: 165px;
+    }
+    .card-list p{
+        font-size: 10px;
+    }
+}

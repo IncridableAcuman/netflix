@@ -1,0 +1,101 @@
+.hero{
+    position: relative;
+}
+.hero-img{
+    width: 100%;
+    mask-image: linear-gradient(to right,top,transparent,black 75%);
+    -webkit-mask-image: linear-gradient(to right,transparent,black 75%);
+    max-height: 110vh;
+}
+.hero-title{
+    font-size: 50px;
+    color: crimson;
+    font-weight: 900;
+}
+.hero-caption{
+    position: absolute;
+    width: 100%;
+    padding-left: 6%;
+    bottom: 0;
+    margin-bottom: 20px;
+}
+.caption-image{
+    width: 90%;
+    max-width: 420px;
+    margin-bottom: 30px;
+}
+.hero-caption p{
+    max-width: 700px;
+    font-size: 17px;
+    margin-bottom: 20px;
+}
+.hero-btns{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 50px;
+}
+.hero-btns .btn img{
+    width: 25px;
+}
+.hero-btns .btn{
+    display: inline-flex;
+    gap: 10px;align-items: center;
+    padding: 8px 20px;
+    border: 0;
+    outline: none;
+    border-radius: 4px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.hero-btns .btn.dark-btn{
+    color: #fff;
+    background-color: #6d6d6e3b;
+}
+.hero-btns .btn:hover{
+    background: #ffffffbf;
+}
+.hero-btns .btn.dark-btn:hover{
+    background: #6d6d6e6b;
+}
+.more-cards{
+    margin-left: 6%;
+}
+@media (max-width:1024px) {
+    .hero-caption .hero-title{
+        display: none;
+    }
+    .hero-btns{
+        margin-bottom: 30px;
+    }
+}
+@media (max-width:800px) {
+    .hero-caption{
+        margin-left: 4%;
+    }
+    .hero-img{
+        margin-bottom: 50px;
+        width: 100%;
+    }
+    .hero-caption p{
+        font-size: 12px;
+        margin-bottom: 10px;
+        margin-top: 20px;
+    }
+    .hero-btns .btn img{
+        width: 20px;
+    }
+    .more-cards{
+        padding-left: 4%;
+    }
+}
+@media (max-width:500px) {
+    .hero-btns .hero-img{
+        display: none;
+    }
+   .hero-btns .btn img{
+        width: 15px;
+        gap: 5px;
+        font-size: 10px;
+    }
+}
